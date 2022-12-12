@@ -7,10 +7,19 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "user" && password === "web_dev") {
+    // Proper code
+    // if (username === "user" && password === "web_dev") {
+    //     alert("You have successfully logged in.");
+    //     location.reload();
+    // } else {
+    //     loginErrorMsg.style.opacity = 1;
+    // }
+
+    // Create a bug where any password works and error message is barely visible
+    if (username === "user") {
         alert("You have successfully logged in.");
         location.reload();
     } else {
-        loginErrorMsg.style.opacity = 1;
+        loginErrorMsg.style.opacity = .05;
     }
 })
