@@ -1,0 +1,6 @@
+version: "2"
+# version: "3"
+syncs:
+  mahdi-qa-training-sync:
+    src: ./
+    sync_excludes: [log, tmp, .git, .bundle, .idea, node_modules]
