@@ -3,3 +3,4 @@ Feature: This is a feature file
 
     Scenario: This is a test case
         Given I navigate to the url "www.google.com"
+        Then let me debug
