@@ -1,6 +1,8 @@
 require 'cucumber'
 require 'pry'
 require 'watir'
+require 'rspec'
+require 'webdrivers'
 
 driver = Watir::Browser.new :chrome
 
