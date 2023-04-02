@@ -1,8 +1,11 @@
-Feature: This is a feature file
-    Notes go here.
+Feature: This is a feature file to teach automation
+    We will be building this out over time.
 
-    Scenario: This is a test case
-        Given I navigate to the url "www.google.com"
-        And the title of the page includes the text "Google"
-        # Then let me debug
-        And the url of the page includes the text "google.com"
+    Scenario: Go to the webpage and interact with it.
+        Given I navigate to the url "www.wikipedia.org"
+        And the title of the page includes the text "Wikipedia"
+        And the url of the page includes the text "wikipedia.org"
+        Then let me debug
+        And I click on the element type id named "js-link-box-en"
+        And I go to the wikipedia page named "Liberia"
+        Then let me debug
